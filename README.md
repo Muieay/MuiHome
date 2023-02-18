@@ -1,7 +1,7 @@
 # MuiHome
-
-[Muieay`Space](https://muieay.top){:target="_blank"}
-
+展示站：
+[Muieay`Space](https://muieay.top)
 <br>
 
-[小枫网络](https://www.xfabe.com/YYDS/GlassUI){:target="_blank"}
+开源地址：
+[毛玻璃UI](https://gitee.com/xfwlclub/Glass-UI)
