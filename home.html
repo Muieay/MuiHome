@@ -68,19 +68,19 @@
                                     </a>
                                 </li>
                                 <li class="xf_glass">
-                                    <a href="JavaScript:;" rel="noopener noreferrer">
+                                    <a rel="noopener noreferrer">
                                         <!-- 这里切换微信图片 -->
                                         <img loading="lazy" id="xf_wxImg" src="./static/upload/qq_c.png" alt="扫一扫添加 <del>微信</del> QQ" width="300" height="200">
                                         <img src="./static/upload/wx.png">
                                     </a>
                                 </li>
                                 <li class="xf_glass">
-                                    <a href="https://space.bilibili.com/1357743368" target="_blank" rel="noopener noreferrer">
+                                    <a onclick="window.open('https://space.bilibili.com/1357743368')" rel="noopener noreferrer">
                                         <img src="./static/upload/bilibili.png">
                                     </a>
                                 </li>
                                 <li class="xf_glass">
-									<a href="mailto:xiaogitta@qq.com" target="_blank" rel="noopener noreferrer">
+									<a onclick="window.open('mailto:xiaogitta@qq.com')" rel="noopener noreferrer">
 									    <img src="./static/upload/mail.png">
 									</a>
                                 </li>
@@ -90,12 +90,12 @@
                         <div class="swiper-slide">
                             <ul>
                                 <li class="xf_glass">
-                                    <a href="https://www.douyin.com/user/MS4wLjABAAAAXhFLdITJAiUO05xWsKBNLQFmwehATQ2lvisSNoQCnGs" target="_blank" rel="noopener noreferrer">
+                                    <a onclick="window.open('https://www.douyin.com/user/MS4wLjABAAAAXhFLdITJAiUO05xWsKBNLQFmwehATQ2lvisSNoQCnGs')" rel="noopener noreferrer">
                                         <img src="./static/upload/tiktok.svg">
                                     </a>
                                 </li>
                                 <li class="xf_glass">
-                                    <a href="https://github.com/Muieay" target="_blank" rel="noopener noreferrer">
+                                    <a onclick="window.open('https://github.com/Muieay')" rel="noopener noreferrer">
                                         <img src="./static/upload/github.svg">
                                     </a>
                                 </li>
@@ -136,7 +136,7 @@
                         <ul class="web_site">
                             <li class="xf_glass">
                                 <!-- 这里替换链接 -->
-                                <a onclick="window.location.href='https://blog.muieay.top'" >
+                                <a onclick="window.open('https://blog.muieay.top')" >
                                     <!-- 这里替换图标 -->
                                     <span>博客</span>
                                 </a>
@@ -232,6 +232,10 @@
         var days=xf_footer_time2-xf_footer_time1;
         var number_of_days=parseInt(days/(1000*60*60*24));
         $(".xf-days")[0].innerHTML=number_of_days+'天';
+		// 禁止选中
+		document.body.onselectstart = function () { 
+		    return false; 
+		};
     </script>
 	<script async src="https://blog.muieay.top/js/Muiconsole.js"></script>
 </body>
