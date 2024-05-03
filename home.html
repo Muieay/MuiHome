@@ -147,7 +147,7 @@
                                 </a>
                             </li>
                             <li class="xf_glass">
-                                <a onclick="window.open('https://mh77.love/random')" rel="noopener noreferrer">
+                                <a onclick="window.open('https://mh77.muieay.link/random')" rel="noopener noreferrer">
                                     <span>文章</span>
                                 </a>
                             </li>
@@ -196,7 +196,7 @@
                 <div class="xf_friends" style="display: none;">
                     <h4 id="xf-friend-rotate"><img src="./static/images/cooperation.png">我的好友</h4>
                     <ul class="xf_friend_YYDS">
-                         <li>
+                         <li v-for="(item,index) in musicList" :key="index">
                             <a href="https://github.com/muieay" target="_blank" rel="noopener noreferrer">
                                 <img src="./img/my.jpg" alt="沐小语">
                                 <h5>沐小语</h5>
@@ -223,6 +223,13 @@
     <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/8.0.6/swiper-bundle.min.js"></script>
     <script src="./static/js/flexible.js"></script>
     <script src="./static/js/fireworks.js"></script>
+    <script>
+        // 音乐API，index.js采用开源的meting2，index2.js使用别人的抖音热榜API
+        let userId = "8152976493";
+        let userServer = "netease";
+        let userType = "playlist";
+        let metingApi = "https://meting.qjqq.cn";
+    </script>
     <script src="./static/js/index.js"></script>
     <script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
     <script>
